@@ -1,0 +1,253 @@
+.articles-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffafcc 0%, #ffc8dd 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(255, 175, 204, 0.2);
+}
+
+.page-header h1 {
+  color: #7b2cbf;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #9d4b6d;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fff9fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 175, 204, 0.15);
+  border: 1px solid #ffe5ec;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.search-group label {
+  font-weight: 600;
+  color: #7b2cbf;
+}
+
+.search-input-container {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #ffccd5;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  color: #5a3d5c;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff8fab;
+  box-shadow: 0 0 0 3px rgba(255, 143, 171, 0.1);
+}
+
+.search-input::placeholder {
+  color: #b5838d;
+  opacity: 0.7;
+}
+
+.search-button {
+  background: linear-gradient(135deg, #ff8fab 0%, #ffafcc 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background: linear-gradient(135deg, #ff7aa2 0%, #ffa0c2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 138, 171, 0.4);
+}
+
+.active-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ffe5ec;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ff8fab;
+  margin-top: 0.5rem;
+  color: #9d4b6d;
+}
+
+.clear-filter {
+  background: none;
+  border: none;
+  color: #ff6b8b;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0;
+  margin-left: auto;
+  transition: color 0.3s ease;
+}
+
+.clear-filter:hover {
+  color: #ff5a7a;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #7b2cbf;
+  white-space: nowrap;
+}
+
+.filter-group select {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ffccd5;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #5a3d5c;
+  font-family: inherit;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #ff8fab;
+  box-shadow: 0 0 0 3px rgba(255, 143, 171, 0.1);
+}
+
+.clear-all-filters {
+  background-color: #ffb3c6;
+  color: #7b2cbf;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.clear-all-filters:hover {
+  background-color: #ffa0c2;
+  transform: translateY(-2px);
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.articles-count {
+  background-color: #ffe5ec;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ffccd5;
+  color: #7b2cbf;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.no-articles {
+  text-align: center;
+  padding: 3rem;
+  background: #fff9fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 175, 204, 0.15);
+  border: 1px solid #ffe5ec;
+}
+
+.no-articles h3 {
+  color: #7b2cbf;
+  margin-bottom: 1rem;
+}
+
+.no-articles p {
+  color: #9d4b6d;
+  margin-bottom: 1.5rem;
+}
+
+.clear-search {
+  background: linear-gradient(135deg, #ff8fab 0%, #ffafcc 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.clear-search:hover {
+  background: linear-gradient(135deg, #ff7aa2 0%, #ffa0c2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 138, 171, 0.4);
+}
+
+@media (max-width: 768px) {
+  .filters {
+    padding: 1rem;
+  }
+
+  .search-input-container {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-group label,
+  .filter-group label {
+    margin-bottom: 0.25rem;
+  }
+
+  .page-header {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}

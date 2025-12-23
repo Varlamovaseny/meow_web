@@ -45,10 +45,7 @@ const Home = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1>Добро пожаловать в meow.blog!</h1>
-            <p>Уютный блог о котиках и не только</p>
-          </div>
-          <div className="hero-image">
-            <img src="/cat.png" alt="Милый котик" className="cat-image" />
+            <p>Это блог</p>
           </div>
         </div>
       </section>

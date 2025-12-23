@@ -1,0 +1,117 @@
+.auth-page {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.auth-form {
+  background: #fff9fb;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(255, 175, 204, 0.2);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ffe5ec;
+}
+
+.auth-form h1 {
+  text-align: center;
+  color: #7b2cbf;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #7b2cbf;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ffccd5;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  color: #5a3d5c;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff8fab;
+  box-shadow: 0 0 0 3px rgba(255, 143, 171, 0.1);
+}
+
+.form-group input.error {
+  border-color: #ff6b8b;
+}
+
+.error-text {
+  color: #ff6b8b;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.error-message {
+  background-color: #ffe5e9;
+  color: #9d4b6d;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ffccd5;
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #ff8fab 0%, #ffafcc 100%);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #ff7aa2 0%, #ffa0c2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 138, 171, 0.4);
+}
+
+.submit-btn:disabled {
+  background: #ffb3c6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.auth-link {
+  text-align: center;
+  color: #9d4b6d;
+}
+
+.auth-link a {
+  color: #ff8fab;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.auth-link a:hover {
+  color: #ff7aa2;
+  text-decoration: underline;
+}
