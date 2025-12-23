@@ -1,0 +1,146 @@
+.article-card {
+  background: #fff9fb;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(255, 175, 204, 0.15);
+  transition: all 0.3s ease;
+  border: 1px solid #ffe5ec;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 175, 204, 0.3);
+  border-color: #ffafcc;
+}
+
+.article-header h2 {
+  margin-bottom: 0.5rem;
+  color: #7b2cbf;
+}
+
+.article-header h2 a {
+  color: #7b2cbf;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.article-header h2 a:hover {
+  color: #ff8fab;
+  text-decoration: underline;
+}
+
+.article-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #9d4b6d;
+}
+
+.article-meta span {
+  background-color: #ffe5ec;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #ffccd5;
+  transition: all 0.3s ease;
+}
+
+.article-meta span:hover {
+  background-color: #ffd6e0;
+  transform: translateY(-1px);
+}
+
+.article-content p {
+  color: #5a3d5c;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.article-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ffccd5;
+}
+
+.read-more {
+  background: linear-gradient(135deg, #ff8fab 0%, #ffafcc 100%);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.read-more:hover {
+  background: linear-gradient(135deg, #ff7aa2 0%, #ffa0c2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 138, 171, 0.4);
+}
+
+.author-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.edit-btn {
+  background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ff6b8b 0%, #ff8fab 100%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #ff5a7a 0%, #ff7aa2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 107, 139, 0.4);
+}
+
+@media (max-width: 768px) {
+  .article-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .author-actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+
+  .article-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
